@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- Strings comuns -->
+    <string name="descriptionLogo">logotipo da calculadora</string>
 
     <!-- Strings Tela Principal -->
     <string name="btnTPCalculadoraIMC">Calculadora IMC</string>

@@ -6,6 +6,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -22,7 +23,10 @@ public class CalculoIMCActivity extends AppCompatActivity {
     private EditText editAltura;
     private float peso;
     private float altura;
-    private float imc;
+    private float IMC;
+    private String classificacao;
+
+    private ImageView btnFechar;
 
 
     @Override
@@ -41,36 +45,50 @@ public class CalculoIMCActivity extends AppCompatActivity {
         btnSet.setOnClickListener(view -> {
             peso = Float.parseFloat(editPeso.getText().toString());
             altura = Float.parseFloat(editAltura.getText().toString());
-            imc = peso/((altura)*(altura));
+            IMC = peso/((altura)*(altura));
 
             Class activity = MainActivity.class;
 
-            if(imc<18.5){
+            if(IMC<18.5){
                 activity = AbaixoDoPesoActivity.class;
+                classificacao = "Abaixo do peso";
             }
-            else if(imc>=18.5 && imc<25){
+            else if(IMC>=18.5 && IMC<25){
                 activity = PesoNormalActivity.class;
+                classificacao = "Peso normal";
             }
-            else if(imc>=25 && imc<30){
+            else if(IMC>=25 && IMC<30){
                 activity = SobrepesoActivity.class;
+                classificacao = "Sobrepeso";
             }
-            else if(imc>=30 && imc<35){
+            else if(IMC>=30 && IMC<35){
                 activity = Obesidade1Activity.class;
+                classificacao = "Obesidade grau 1";
             }
-            else if(imc>=35 && imc<40){
+            else if(IMC>=35 && IMC<40){
                 activity = Obesidade2Activity.class;
+                classificacao = "Obesidade grau 2";
             }
-            else if(imc>=40){
+            else if(IMC>=40){
                 activity = Obesidade3Activity.class;
+                classificacao = "Obesidade grau 3";
             }
 
             Intent intent = new Intent(this, activity);
 
             intent.putExtra("peso", peso);
             intent.putExtra("altura", altura);
-            intent.putExtra("IMC", imc);
+            intent.putExtra("IMC", IMC);
+            intent.putExtra("classificacao", classificacao);
 
             startActivity(intent);
+        });
+
+        btnFechar = findViewById(R.id.btnFechar);
+        btnFechar.setOnClickListener(view -> {
+            Intent intent = new Intent(this, MainActivity.class);
+            startActivity(intent);
+            finish();
         });
 
 
