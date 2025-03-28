@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Strings Tela Principal -->
+    <string name="btnTPCalculadoraIMC">Calculadora IMC</string>
+
+    <!-- String Tela de Cálculo de IMC-->
+    <string name="appPlan1">Peso (kg): </string>
+    <string name="appPlan2">Altura (m): </string>
+    <string name="appBtnSet">Calcular IMC</string>
+    <string name="appBtnReset">Limpar</string>
+
+
+
+    <!-- Cores do Projeto -->
+    <color name="appColor1">#006341</color>
+    <color name="appColor2">#00A859</color>
+    <color name="appColor3">#4D4D4D</color>
+    <color name="appColor4">#B3B3B3</color>
+    <color name="appColor5">#FFFFFF</color>
+
+</resources>
