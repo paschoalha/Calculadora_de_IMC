@@ -39,6 +39,8 @@ public class CalculoIMCActivity extends AppCompatActivity {
         editPeso = findViewById(R.id.editaTextPeso);
         editAltura = findViewById(R.id.editTextAltura);
 
+        DecimalFormat df = new DecimalFormat("#.00");
+
         btnSet = findViewById(R.id.btnSet);
         btnSet.setOnClickListener(view -> {
             peso = Float.parseFloat(editPeso.getText().toString());
