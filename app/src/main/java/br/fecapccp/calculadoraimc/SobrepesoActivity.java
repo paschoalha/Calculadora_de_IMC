@@ -17,7 +17,12 @@ public class SobrepesoActivity extends AppCompatActivity {
     private float altura;
     private float IMC;
     private String classificacao;
-    private TextView textResultado;
+    private String FraseMotivacional;
+    private TextView textPeso;
+    private TextView textAltura;
+    private TextView textIMC;
+    private TextView textClassificacao;
+    private TextView textFraseMotivacional;
     private ImageView btnFechar;
 
     @Override
@@ -39,10 +44,19 @@ public class SobrepesoActivity extends AppCompatActivity {
         altura = bundle.getFloat("altura");
         IMC = bundle.getFloat("IMC");
         classificacao = bundle.getString("classificacao");
+        FraseMotivacional = bundle.getString("FraseMotivacional");
 
-        textResultado = findViewById(R.id.textResultado);
-        textResultado.setText("com " + altura + "m de altura e pesando "+ peso + " kg, seu IMC é de " + IMC + " o que te classifica em: " + classificacao);
+        textPeso = findViewById(R.id.textPeso);
+        textAltura = findViewById(R.id.textAltura);
+        textIMC = findViewById(R.id.textIMC);
+        textClassificacao = findViewById(R.id.textClassificacao);
+        textFraseMotivacional = findViewById(R.id.textFraseMotivacional);
 
+        textPeso.setText(""+peso);
+        textAltura.setText(""+altura);
+        textIMC.setText(""+IMC);
+        textClassificacao.setText(""+classificacao);
+        textFraseMotivacional.setText(""+FraseMotivacional);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
