@@ -11,6 +11,8 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import java.util.Locale;
+
 public class Obesidade1Activity extends AppCompatActivity {
 
     private float peso;
@@ -52,11 +54,14 @@ public class Obesidade1Activity extends AppCompatActivity {
         textClassificacao = findViewById(R.id.textClassificacao);
         textFraseMotivacional = findViewById(R.id.textFraseMotivacional);
 
-        textPeso.setText(""+peso);
-        textAltura.setText(""+altura);
-        textIMC.setText(""+IMC);
-        textClassificacao.setText(""+classificacao);
-        textFraseMotivacional.setText(""+FraseMotivacional);
+        String formatado = String.format(Locale.US, "%.2f", IMC);
+
+        textPeso.setText(" "+ peso+ "kg");
+        textAltura.setText(" "+ altura+"m");
+        textIMC.setText(" "+ formatado +" kg/m²");
+        textClassificacao.setText(" "+ classificacao);
+        textFraseMotivacional.setText(""+ FraseMotivacional);
+
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
