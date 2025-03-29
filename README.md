@@ -3,8 +3,8 @@
 
 ## 📂 Atalhos para arquivos principais do projeto
 
-- 📱 **Download do APK:**  [Clique para baixar o app-debug.apk](https://raw.githubusercontent.com/DudaLucenaMiguel/Calculadora_de_IMC/main/app-debug.apk)
-- 🗜️ **Download do Projeto ZIP:**  [Clique para baixar o Calculadora_IMC.zip](https://raw.githubusercontent.com/DudaLucenaMiguel/Calculadora_de_IMC/main/Calculadora%20IMC.zip)
+- **Download do APK:**  [Clique para baixar o app-debug.apk](https://raw.githubusercontent.com/DudaLucenaMiguel/Calculadora_de_IMC/main/app-debug.apk)
+- **Download do Projeto ZIP:**  [Clique para baixar o Calculadora_IMC.zip](https://raw.githubusercontent.com/DudaLucenaMiguel/Calculadora_de_IMC/main/Calculadora%20IMC.zip)
 - **Códigos .java:**  [`/java/br/fecapccp/calculadoraimc`](https://github.com/DudaLucenaMiguel/Calculadora_de_IMC/tree/main/app/src/main/java/br/fecapccp/calculadoraimc)
 - **Layouts .xml:**  [`/res/layout`](https://github.com/DudaLucenaMiguel/Calculadora_de_IMC/tree/main/app/src/main/res/layout)
 
