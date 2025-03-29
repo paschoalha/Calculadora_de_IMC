@@ -20,6 +20,7 @@ import java.text.DecimalFormat;
 
 public class MainActivity extends AppCompatActivity {
 
+    //variaveis
     private Button btnCalculadoraIMC;
 
     @Override
@@ -28,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
 
+        
         btnCalculadoraIMC = findViewById(R.id.btnCalculadoraIMC);
         btnCalculadoraIMC.setOnClickListener(view -> {
             Intent intent = new Intent(this, CalculoIMCActivity.class);
