@@ -12,7 +12,26 @@
     <string name="appBtnSet">Calcular IMC</string>
     <string name="appBtnReset">Limpar</string>
 
+    <!-- Strings Telas de Resultado -->
+    <string name="Text1">com uma altura de  </string>
+    <string name="Text2">pesando </string>
+    <string name="Text3">seu IMC vale </string>
+    <string name="Text4">o que te classica em </string>
+        <!-- Strings Descrição de imagens usados nas telas de resultado -->
+        <string name="descriptionAbaixoDoPeso">silhueta lateral, em cor sólida de um corpo abaixo do peso</string>
+        <string name="descriptionPesoNormal">silhueta lateral, em cor sólida de um corpo com o Peso ideal</string>
+        <string name="descriptionSobrepeso">silhueta lateral, em cor sólida de um corpo em Sobrepeso</string>
+        <string name="descriptionObesidade1">silhueta lateral, em cor sólida de um corpo em Obesidade grau 1</string>
+        <string name="descriptionObesidade2">silhueta lateral, em cor sólida de um corpo em Obesidade grau 2</string>
+        <string name="descriptionObesidade3">silhueta lateral, em cor sólida de um corpo em Obesidade grau 3</string>
 
+    <!-- cores Telas de Resultado -->
+    <color name="colorTelaAbaixoDoPeso">#234E55</color>
+    <color name="colorTelaPesoNormal">#4A7F66</color>
+    <color name="colorTelaSobrepeso">#DE8E3F</color>
+    <color name="colorTelaObesidade1">#D4693A</color>
+    <color name="colorTelaObesidade2">#CB5D39</color>
+    <color name="colorTelaObesidade3">#9A4139</color>
 
     <!-- Cores do Projeto -->
     <color name="appColor1">#006341</color>
